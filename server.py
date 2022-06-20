@@ -29,7 +29,7 @@ from sklearn.cluster import KMeans
 from imblearn.over_sampling import RandomOverSampler, SMOTE
 
 #on importe le jeu de donnée
-df=pd.read_csv(r'fraud.csv',index_col="user_id")
+df=pd.read_csv(r'/home/ubuntu/exam_scoring/git_exam_churn/fraud.csv',index_col="user_id")
 
 
 # ## I. Audit des données
@@ -772,7 +772,7 @@ for k in K:
     
 import matplotlib.pyplot as plt
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+#get_ipython().run_line_magic('matplotlib', 'inline')
 
 fig,ax=plt.subplots(dpi=130)
 
