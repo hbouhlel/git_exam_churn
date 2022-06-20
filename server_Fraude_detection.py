@@ -7,7 +7,7 @@
 # In[1]:
 
 
-get_ipython().system('pip install imblearn')
+#get_ipython().system('pip install imblearn')
 
 
 # 
@@ -18,7 +18,7 @@ get_ipython().system('pip install imblearn')
 
 
 # importer le package pandas
-get_ipython().run_line_magic('matplotlib', 'inline')
+#get_ipython().run_line_magic('matplotlib', 'inline')
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
