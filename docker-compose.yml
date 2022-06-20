@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  api:
+    image: datascientest/fastapi:1.0.0
+    container_name: my_api_container
+    networks:
+      - my_network
+    ports:
+      - target: 8000
+        published: 8000
+        protocol: tcp
+        mode: host
+  my_test:
+    image: image_exam_scoring
+    container_name: my_exam_scoring_container
+    depends_on:
+      - api
+    networks:
+      - my_network
+
+networks:
+  my_network:
